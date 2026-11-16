@@ -2,8 +2,21 @@ import requests
 import pyttsx3
 import speech_recognition as sr
 from tts_module import speak
+import os
+import requests
+import pyttsx3
+import speech_recognition as sr
+from tts_module import speak
+from dotenv import load_dotenv
 
-API_KEY = "AIzaSyCIh3_nVaLrH2Lkie17TmIEjiVme9lCYZM"  # 🔑 Replace with your Google Maps API key
+load_dotenv()
+
+API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")
+
+if not API_KEY:
+    raise ValueError("Google Maps API key not found in .env file")
+
+API_KEY = "your_api_key"  # 🔑 Replace with your Google Maps API key
 
 # ----------------------------
 # 🎤 Voice Recognition
