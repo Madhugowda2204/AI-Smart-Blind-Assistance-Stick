@@ -78,6 +78,18 @@ pip install -r requirements.txt
 
 To develop an affordable, portable, and intelligent assistive device that supports independent mobility and improves accessibility for visually impaired individuals.
 
+## Project Screenshots
+
+### Hardware Setup
+![Hardware Setup](../screenshots/hardware_setup.JPG)
+
+### Project Overview
+![Project Overview](../screenshots/project_overview.JPG)
+
+### Circuit Diagram
+![Circuit Diagram](../screenshots/circuit_diagram.png)
+
+
 ## Author
 
 Developed as an academic AI and Data Science project.
