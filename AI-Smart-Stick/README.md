@@ -1,4 +1,3 @@
-
 # AI-Enabled Blind Assistance Stick
 
 An AI-powered assistive device designed to help visually impaired people navigate their surroundings independently using computer vision, voice assistance, and obstacle detection.
@@ -16,25 +15,12 @@ An AI-powered assistive device designed to help visually impaired people navigat
 
 ## Technologies Used
 
-- Python
-- YOLOv8
-- OpenCV
-- Raspberry Pi
-- Arduino Uno
-- Ultrasonic Sensor
-- GPS Module
-- EasyOCR
-- gTTS
-- Speech Recognition
+Python, YOLOv8, OpenCV, Raspberry Pi, Arduino Uno, HC-SR04 ultrasonic sensor, GPS module, EasyOCR, gTTS and SpeechRecognition.
 
 ## Project Structure
 
 ```text
 AI-Smart-Stick/
-├── docs/
-├── models/
-│   ├── object_detection/
-│   └── ocr/
 ├── software/
 │   ├── arduino.py
 │   ├── emergency_alert.py
@@ -45,23 +31,20 @@ AI-Smart-Stick/
 │   ├── text_reader.py
 │   ├── tts_module.py
 │   └── voice_command.py
-├── .gitignore
-├── requirements.txt
-└── README.md
+└── .gitignore
 ```
+
+The repository-level `requirements.txt` is in the parent directory.
 
 ## Installation
 
-1. Clone this repository.
-2. Install the required Python packages:
+From the repository root, install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Download the YOLOv8 model weights required by the project and place them in the expected location.
-4. Configure the Arduino, GPS module, camera, and other hardware components.
-5. Configure the required API credentials for emergency SMS functionality.
+Download the YOLOv8 model weights required by the object-detection module and place them at the path expected by the code. Configure the Arduino, GPS module, camera and other hardware components before running the application.
 
 ## Hardware Requirements
 
@@ -73,10 +56,6 @@ pip install -r requirements.txt
 - Vibration Motor
 - Buzzer
 - Earphones
-
-## Project Objective
-
-To develop an affordable, portable, and intelligent assistive device that supports independent mobility and improves accessibility for visually impaired individuals.
 
 ## Project Screenshots
 
@@ -93,12 +72,11 @@ To develop an affordable, portable, and intelligent assistive device that suppor
 
 **DRISHTANT: AI Enabled Blind Assistance Stick**
 
-This research paper presents the system architecture,
-methodology, hardware integration, AI-based object detection,
-and experimental evaluation of the proposed assistive device.
+[Read the research paper](../drishtant_research_paper.pdf)
 
-[Read the Research Paper](research_paper/DRISHTANT_Research_Paper.pdf)
+## Security and Limitations
 
+Keep Twilio credentials, API keys and personal phone numbers in a local `.env` file. Do not commit secrets. Emergency SMS requires network access and valid Twilio credentials; it is not an offline feature.
 
 ## Author
 
