@@ -1,0 +1,17 @@
+# Python environments
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# YOLO model weights
+*.pt
+
+# Temporary files
+*.log
+*.tmp
+
+# IDE settings
+.vscode/

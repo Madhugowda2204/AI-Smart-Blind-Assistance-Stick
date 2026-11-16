@@ -1,0 +1,14 @@
+
+ultralytics
+opencv-python
+numpy
+pyserial
+Pillow
+pytesseract
+easyocr
+SpeechRecognition
+pyttsx3
+gTTS
+gensim
+twilio
+requests
