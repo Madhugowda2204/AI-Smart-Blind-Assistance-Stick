@@ -89,6 +89,16 @@ To develop an affordable, portable, and intelligent assistive device that suppor
 ### Circuit Diagram
 ![Circuit Diagram](../screenshots/circuit_diagram.png)
 
+## Research Paper
+
+**DRISHTANT: AI Enabled Blind Assistance Stick**
+
+This research paper presents the system architecture,
+methodology, hardware integration, AI-based object detection,
+and experimental evaluation of the proposed assistive device.
+
+[Read the Research Paper](research_paper/DRISHTANT_Research_Paper.pdf)
+
 
 ## Author
 
